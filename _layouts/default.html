@@ -1,0 +1,206 @@
+
+
+
+	<div class="row" id="main">
+		<div class="col-lg-7 col-sm-7">
+			<div id="div1_part1">
+				<span class="fa fa-check-square-o" id="awesome_icon"></span>
+				<span class="campton_medium sixteen-pixel" id="addrs1">Address</span>
+				<span class="campton_medium sixteen-pixel" id="addrs2">Address for home delivery</span>
+				
+
+
+				<!--add and delete button-->
+					<button class="campton_semibold twelve-pixel" id="add_addrs">ADD</button>
+					<button class="campton_semibold twelve-pixel" id="edit_addrs">EDIT</button>			
+
+
+
+				
+				<input type="text" class="campton_book sixteen-pixel" size="40" maxlength="55" id="addr_label" readonly="raedonly"/>
+				<!-- <label class="campton_book sixteen-pixel" id="div1_part1_lbl1">#50, Sri Latha, HSR Layout...</label> -->
+				<!-- <input type="text" size="87" maxlength="55" name="text2" id="myText" placeholder="Enter deliver address" /> -->
+				<textarea rows="4" cols="50" id="myText" resize="none" placeholder="Enter deliver address"></textarea>
+			</div>
+			<div id="div1_part2">
+				<div>
+					<span class="campton_medium sixteen-pixel">Add Accessories</span>
+					<a data-toggle="collapse" class="campton_book twelve-pixel" data-target="#div1_part2_div2" id="div1_part1_btn1">SEE ALL</a>
+
+					
+				</div>
+				<div id="div1_part2_div2" class="collapse">
+					<div class="row">
+
+
+						<div class="col-lg-1 col-sm-1 checkbox-margin">
+							<input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" >
+           					<label for="checkbox-1" class="checkbox-custom-label"></label>
+						</div>
+						<div class="col-lg-7 col-sm-7">
+							<span class="campton_book sixteen-pixel">Portable Fridge</span>
+							<p class="campton_light twelve-pixel">Lorem ipsum dolor sit amet, consectetur 
+								adipiscing elit. In vulputate metus non nunc pulvinar.</p>	
+						</div>
+						<div class="col-lg-2 col-sm-2">
+							
+						</div>
+						<div class="col-lg-2  col-sm-2">
+							<label class="cost_label campton_semibold eighteen-pixel" id="div1_part1_lbl1">Rs 500</label>
+						</div>
+					</div>
+						<hr/>
+						<div class="row">
+						<div class="col-lg-1  col-sm-1 checkbox-margin">
+							<input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
+            				<label for="checkbox-2" class="checkbox-custom-label"></label>
+						</div>
+						<div class="col-lg-7  col-sm-7">
+							<span class="campton_book sixteen-pixel">Fuel Plan</span>
+							<p class="campton_light twelve-pixel">Lorem ipsum dolor sit amet, consectetur 
+								adipiscing elit. In vulputate metus non nunc pulvinar.</p>	
+						</div>
+						<div class="col-lg-2  col-sm-2">
+							
+						</div>
+						<div class="col-lg-2  col-sm-2">
+							<label class="cost_label campton_semibold eighteen-pixel" id="div1_part1_lbl1">Rs 500</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div  id="div1_part3">
+				<div id="div1_part3_div1">
+					<span class="fa fa-check-square-o" id="awesome_icon2"></span>
+					<span class="campton_medium sixteen-pixel">Account Details</span>
+					<input type="text" class="campton_book sixteen-pixel" size="40" maxlength="55" id="acc_label" readonly="raedonly" />
+				</div>
+				<div id="div1_part3_div2">
+					<span class="campton_light sixteen-pixel">Login through</span>
+					<a href="" class="btn btn-primary btn_fb campton_semibold twelve-pixel">FACEBOOK</a>
+					<a href="" class="btn btn-primary btn_google campton_semibold twelve-pixel">GOOGLE</a>
+				</div>
+				<div class="row" id="div1_part3_div3">
+					<div class="col-lg-6  col-sm-6" id="old_acc">
+						<p class="campton_bold">Already a member?</p>
+						      <form   class="form-signin" method="post" onSubmit="submitForm(event)" >
+						        <input type="email" id="inputEmail1" class="form-control mainLoginInput" placeholder="Email" required autofocus>
+						        <input type="password" id="inputPassword" class="form-control mainLoginInput" placeholder="Password" required>
+						      
+
+
+
+						        <button class="btn btn-default form_btn campton_semibold sixteen-pixel" type="submit" id="login_btn">LOGIN</button>
+						     </form> 
+					</div>
+					<div class="col-lg-6  col-sm-6" id="new_acc">
+						<p class="campton_bold">Want to become a member?</p>
+						      <form class="form-signin" action="" onSubmit="submitForm(event)">
+						        <input type="name" id="inputName" class="form-control mainLoginInput" placeholder="Name" required autofocus>
+						        <input type="email" id="inputEmail2" class="form-control mainLoginInput" placeholder="Email" required>
+						        <input type="password" id="inputPassword" class="form-control mainLoginInput" placeholder="Password" required>
+						        <input type="password" id="inputConfirmPassword" class="form-control mainLoginInput" placeholder="Confirm Password" required>
+						        <div class="row"  id="agreement">
+						          <div class="col-lg-2 checkbox-margin3">
+						            <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox" required>
+         							   <label for="checkbox-3"class="checkbox-custom-label"></label> 
+         						   </div>
+         						   <div class="col-lg-10 twelve-pixel">
+         							   <span> By registering with us, you agree with our terms & conditons, policy terms.</span>
+										<br/><a  class="campton_semibold" href="">View Policy</a>
+						           </div>
+						        </div>
+						       
+						        <button class="btn btn-default form_btn campton_semibold sixteen-pixel" type="submit" id="signup_btn">SIGN UP</button>
+						      
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col-lg-5  col-sm-5" id="div2">
+				<div class="row" id="div2_part1">
+					<div class="col-lg-6 col-sm-4"><img src="img/maruti.png"/></div>
+					<div class="col-lg-6 col-sm-8 campton_book eighteen-pixel" id="div2_part1_div2"><h3>Maruti Swift</h3></div>
+					
+				</div>
+				<div class="row" id="div2_part2">
+					<span class="campton_light" id="dr_label">Deliver & Rerturn address</span>
+					<input type="text" class="campton_book sixteen-pixel" size="40" maxlength="55" id="dr_addrs" readonly="raedonly" />
+					<div class="row">
+						<br/>
+						<div class="col-lg-6 col-sm-6">
+							<p class="campton_light">From</p>
+							<h4 class="campton_book sixteen-pixel">May 06th, 19:00 hrs </h4>
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<p class="campton_light">To</p>
+							<h4 class="campton_book sixteen-pixel">May 10th, 19:00 hrs</h4>
+						</div>
+					</div>
+					<table>
+						<tbody>												                                         
+							<tr>
+								<td><label class="campton_light">Basic Price</label></td>
+								<td><label class="cost_amount price_list campton_bold sixteen-pixel" data-price="2500" >Rs 2,500</label></td>
+							</tr>
+							<tr>
+								<td><label class="campton_light">Tarrif</label></td>
+								<td><label class="cost_amount price_list campton_bold sixteen-pixel" data-price="450">Rs 450</label></td>
+							</tr>
+							<tr>
+								<td><label class="campton_light">Refundable Deposit</label></td>
+								<td><label class="cost_amount price_list campton_bold sixteen-pixel" data-price="4950">Rs 4,950</label></td>
+							</tr>
+							<tr id="row_total">
+								<td><label class="campton_light">Total</label></td>
+								<td><label class="cost_amount campton_bold sixteen-pixel" data-price="4950">Rs 4,950</label></td>
+							</tr>
+							<tr>
+								<td><label class="campton_light">Service Tax @12%</label></td>
+								<td><label class="cost_amount price_list campton_bold sixteen-pixel" data-price="594">Rs 594</label></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="row" id="div2_part3">
+					<div class="row">
+						<div class="col-lg-6 col-sm-6">
+							
+						</div>
+						<div class="col-lg-6 col-sm-6" id="div2_part3_div1_div2">
+							<p class="campton_light eighteen-pixel">Sub Total</p>
+							<input type="text" class="total_cost campton_book sixteen-pixel" size="10"  readonly="raedonly"/>
+						</div>
+					</div>
+					<div >
+						<p class="campton_light">* Fuel and Insurance included in the price. </p>
+					</div>
+					<div class="row" class="row">
+						<div class="col-lg-6 col-sm-6">
+							<p class="campton_light">Total kms </p>
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<label class="cost_amount campton_bold">Rs 450 kms</label>
+							<h4></h4>
+						</div>
+					</div><div class="row">
+						<div class="col-lg-6 col-sm-6">
+							<p class="campton_light">Excess kms charges</p>
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<label class="cost_amount campton_semibold">Rs 15/ kms</label><br/><br/>
+						</div>
+					</div>
+				</div>
+				<div class="row campton_book" id="div2_part4">
+					<p><h5>Terms & Conditions </h5></p>
+					<p class="campton_light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate metus non nunc pulvinar quis posuere dui suscipit. Nunc tempus malesuada volutpat. Morbi dignissim sagittis tortor sit amet vulputate. Duis non nunc eu metus faucibus aliquam vel vel odio. Nullam sit amet quam ac arcu lacinia varius. Praesent ut neque diam, eu porttitor sem. </p>
+				</div>
+		</div>
+
+
+	</div>
+	

@@ -1,0 +1,277 @@
+{% include header.html %}
+<main>
+
+	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading"> Case Study </h1>
+	<!-- carousel-->
+
+   		<div class="carousel-padding"> 
+		   	<div class="line"></div>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+		   		<div class="container heading-caro-padd">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				    	 {% for cont in site.data.Portfolio.carousel.carousel_content%}
+					       {% if forloop.first %}
+					  	<div class="item active">
+					      <p class=" gotham-rounded-bok hw-para">
+					       {{ cont.content}}
+					      </p>
+					    </div>
+						{% else %}
+					   <div class="item">
+					       <p class=" gotham-rounded-bok hw-para">
+					       		 {{ cont.content}}
+					      	</p>
+					    </div>
+						{% endif %}
+					    {% endfor %}
+				    </div>
+				</div>
+			</div>
+	 	</div>
+
+
+
+	<section >
+		<div class="container nav-cs-margin">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="gotham-rounded-bok hw-para para-padding">Tackling each project with passion and determination, in the world of web design, we’ve been working hard to turn heads. Here’s a few of our projects that not only command the user’s attention, but have driven a minimum of a 40% increase in organic search traffic. </p>
+				</div>
+			</div>
+		</div>
+		<!--tabs-->
+	<div class="bs-example line-padding service-tab">
+			<div class="container">
+
+			    <ul class="nav full-border case-studies-control-grid" id="case-study-active">
+			    	
+			        <li class="col-lg-4 li-border" data-tab="business"><a class="hr-display" href="#accelerate-business" >
+			        	<p class="text-center gotham-rounded-bold clr-black">Portfolio</p> </a>
+					</li>
+			        
+			        <li class="col-lg-4 li-border" data-tab="partner" ><a  class="hr-display" href="#offerings" >
+			     	 <p class="text-center gotham-rounded-bold clr-black">Trending</p> 
+	                          
+						</a>
+			        </li>
+
+			        <li class="col-lg-4" data-tab="eng-model"><a  class="hr-display" href="#engageus" >
+			        <p class="text-center gotham-rounded-bold clr-black">Value  Drivers</p> 
+	                         
+						</a>
+			        </li>
+
+			    </ul>
+
+			</div> <!--end of contaier-fuild of tab heading-->
+
+			<!-- tab-content -->
+		    <div class="tab-content case-studies-control-holder" >
+		    	
+		    	<!-- tab1 -->
+					<div id="accelerate-business" data-tab="business" class="tab-pane fade in">
+						<div class="container">
+							<ul class="hw-upskilling-filter">
+								<li class="text-center block-grid" data-value="education">
+									<a href="#" >Education	</a>
+								</li>
+								<li class="text-center block-grid" data-value="event" >
+									<a href="#" >Event</a>
+								</li>
+								<li class="text-center block-grid" data-value="industrial">
+									<a href="#">Industrial</a>
+								</li>
+														
+								<li class="text-center block-grid" data-value="Profit">
+									<a href="#">Non Profit</a>
+								</li>
+								
+								<li class="text-center block-grid">
+									<a href="#" >Retail</a>
+								</li>
+								
+								<li class="text-center block-grid">
+									<a href="#">Sales &amp; Marketing</a>
+								</li>
+
+								<li class="text-center block-grid">
+									<a href="#">Education</a>
+								</li>
+								<li class="text-center block-grid">
+									<a href="#">Event</a>
+								</li>
+								<li class="text-center block-grid">
+									<a href="#">Industrial</a>
+								</li>
+														
+								<li class="text-center block-grid">
+									<a href="#">Non Profit</a>
+								</li>
+								
+								<li class="text-center block-grid">
+									<a href="#">Retail</a>
+								</li>
+								
+								<li class="text-center block-grid">
+									<a href="#">Sales &amp; Marketing</a>
+								</li>
+														
+														
+							</ul>
+
+						</div>
+					
+					</div>
+				<!-- end of tab1-->
+
+			<!-- tab2 -->
+				<div id="offerings" class="tab-pane fade in " data-tab="partner">
+					<div class="container">
+						<ul class="hw-upskilling-filter">
+							<li class="text-center block-grid" data-value="education">
+									<a href="#" >Education	</a>
+								</li>
+								<li class="text-center block-grid" data-value="event" >
+									<a href="#" >Event</a>
+								</li>
+								<li class="text-center block-grid" data-value="industrial">
+									<a href="#">Industrial</a>
+								</li>
+														
+								<li class="text-center block-grid" data-value="Profit">
+									<a href="#">Non Profit</a>
+								</li>
+								
+								<li class="text-center block-grid">
+									<a href="#" >Retail</a>
+								</li>
+								
+								<li class="text-center block-grid">
+									<a href="#">Sales &amp; Marketing</a>
+								</li>
+
+								<li class="text-center block-grid">
+									<a href="#">Education</a>
+								</li>
+								<li class="text-center block-grid">
+									<a href="#">Event</a>
+								</li>
+								<li class="text-center block-grid">
+									<a href="#">Industrial</a>
+								</li>
+														
+								<li class="text-center block-grid">
+									<a href="#">Non Profit</a>
+								</li>
+								
+								<li class="text-center block-grid">
+									<a href="#">Retail</a>
+								</li>
+								
+								<li class="text-center block-grid">
+									<a href="#">Sales &amp; Marketing</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+			<!-- end of tab2-->
+
+
+			<!-- tab3 -->
+				<div id="engageus" class="tab-pane fade in " data-tab="eng-model">
+					<div class="container">
+						<ul class="hw-upskilling-filter">
+						<li class="text-center block-grid" data-value="education">
+									<a href="#" >Education	</a>
+								</li>
+								<li class="text-center block-grid" data-value="event" >
+									<a href="#" >Event</a>
+								</li>
+								<li class="text-center block-grid" data-value="industrial">
+									<a href="#">Industrial</a>
+								</li>
+														
+								<li class="text-center block-grid" data-value="Profit">
+									<a href="#">Non Profit</a>
+								</li>
+								
+								<li class="text-center block-grid">
+									<a href="#" >Retail</a>
+								</li>
+								
+								<li class="text-center block-grid">
+									<a href="#">Sales &amp; Marketing</a>
+								</li>
+
+								<li class="text-center block-grid">
+									<a href="#">Education</a>
+								</li>
+								<li class="text-center block-grid">
+									<a href="#">Event</a>
+								</li>
+								<li class="text-center block-grid">
+									<a href="#">Industrial</a>
+								</li>
+														
+								<li class="text-center block-grid">
+									<a href="#">Non Profit</a>
+								</li>
+								
+								<li class="text-center block-grid">
+									<a href="#">Retail</a>
+								</li>
+								
+								<li class="text-center block-grid">
+									<a href="#">Sales &amp; Marketing</a>
+								</li>				
+						</ul>
+					</div>
+				</div>
+			<!-- end of tab3-->
+		</div>
+	</div><!-- end of the tab-->
+</section>
+	
+	<div class="casestudy-ul">
+	<ul class="blog-grid clearfix">
+		{% for navcasestudy in site.casestudy  %}
+     	
+		<li class="hw-filter-li upskill-cont-filter {{ navcasestudy.category | downcase }}">
+			<div class="image-wrapper">
+				<img width="" height="" alt="" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
+				<div class="blog-post-meta">
+					<h2  class=" gotham-rounded-bok hw-copyright">{{navcasestudy.title}}</h2>
+					<a href="{{navcasestudy.url}}" class="button">View Article</a>
+					<p class=" gotham-rounded-bok hw-copyright">{{navcasestudy.tag}}</p>
+				</div>
+			</div>
+		</li>
+		
+		{% endfor %}
+ 	</ul>
+</div>
+
+	
+	<script>
+		// $(document).ready(function(){
+
+		// 	//filter only for category
+		// 	$("#cat > option").click(function() {
+		// 		//option value attribute 
+		// 		var val = $(this).attr('value');
+		// 		//option value is present in .hw-filter-li.(option value) then that li will show
+		// 	    $(".hw-filter-li." + val).show();
+		// 	    //option value is not present in .hw-filter-li.(option value) then that li will hide
+		// 	    $(".blog-grid > .hw-filter-li:not(." + val + ")").hide();
+		// 	});
+
+		// });
+	</script>
+
+
+	
+	</main>	
+
+{% include footer.html %}

@@ -1,0 +1,19 @@
+banner1:
+   - {title: 'We # on DevOps. DataOps. DataScience + UI/UX',
+      content: 'Delivering velocity & Agility for software driven business'
+   }
+banner2:
+   - { title: 'We are the thinkers...',
+   	   content1: 'Technology is the value driver for todays business', 
+       content2: 'Our thinkers innovate everyday!',
+       link: 'dive deeper'
+   	}
+banner3:
+   - { title: 'Customer Happiness',
+   	   content: 'We handcraft solutions you love',
+   	}
+banner4:
+   - { title: 'Our thinking',
+   	   content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!',
+       link: 'dive deeper',
+   	}
