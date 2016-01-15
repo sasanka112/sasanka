@@ -446,3 +446,152 @@ $(document).ready(function(){
 
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  var name ="";
+  var total_cost=0;
+  var Portable_Fridge=$('<tr id="row_fridge"><td><label class="campton_light">Portable Fridge</label></td><td><label class="cost_amount campton_bold sixteen-pixel">Rs 500</label></td></tr>');
+  var Fuel_Plan=$('<tr id="row_plan"><td><label class="campton_light">Fuel Plan</label></td><td><label class="cost_amount campton_bold sixteen-pixel">Rs 500</label></td></tr>');
+
+
+
+
+
+
+/*    caluclationg total cost   */
+  $('.price_list').each(function(){
+    var dval = $(this).attr('data-price');
+    total_cost+=parseInt(dval);
+  });
+  $('.total_cost').val("Rs. "+total_cost);
+
+
+
+
+/*   Address  for home delivery  */
+  /*   upon enter button  */
+      // $('#dr_label').hide();
+      // $('#dr_addrs').hide();
+      // $('#awesome_icon').hide();
+      // $('#addrs1').hide();
+      // $('#myText').keydown(function(e) {
+      //     if (e.keyCode == 13) {
+      //         e.preventDefault();
+      //         $('#addr_label').val($('#myText').val());
+      //         $('#dr_addrs').val($('#myText').val());
+      //         $('#myText').hide();
+      //         $('#addrs2').hide();
+      //         $('#dr_label').show();
+      //    $('#dr_addrs').show();
+      //         $('#awesome_icon').show();
+      //         $('#addrs1').show();
+      //     }
+      // });
+
+
+  /*add and delete button*/
+      $('#dr_label').hide();
+      $('#dr_addrs').hide();
+      $('#awesome_icon').hide();
+      $('#addrs1').hide();
+      $( "#edit_addrs" ).hide();
+      $( "#add_addrs" ).click(function() {
+        $(".navbar-nav select").val("val2");
+              $('#addr_label').val($('#myText').val());
+              $('#dr_addrs').val($('#myText').val());
+              $('#addr_label').show();
+              $('#myText').hide();
+              $('#addrs2').hide();
+              $('#dr_label').show();
+          $('#dr_addrs').show();
+              $('#awesome_icon').show();
+              $('#addrs1').show();
+              $( "#add_addrs" ).hide();
+              $( "#edit_addrs" ).show();
+      });
+
+
+      $( "#edit_addrs" ).click(function() {
+        $( "#add_addrs" ).text("UPDATE");
+        $( "#add_addrs" ).show();
+        $('#myText').val($('#addr_label').val());
+        $('#myText').show();
+        $('#dr_label').hide();
+        $('#dr_addrs').hide();
+        $('#awesome_icon').hide();
+        $('#addrs1').hide();
+        $('#addrs2').show();
+        $('#addr_label').hide();
+      });   
+
+/*  add accessories  */
+
+  $('#checkbox-1').click(function() {
+    var $this = $(this);
+    // $this will contain a reference to the checkbox   
+    if ($this.is(':checked')) {
+      $('#row_total').parent().prepend(Portable_Fridge);
+      total_cost+=500
+      $('.total_cost').val("Rs. "+total_cost);
+        // the checkbox was checked 
+    } else {
+      $("#row_fridge").remove();
+      total_cost-=500;
+      $('.total_cost').val("Rs. "+total_cost);
+        // the checkbox was unchecked
+    }
+});
+  $('#checkbox-2').click(function() {
+    var $this = $(this);
+    if ($this.is(':checked')) {
+      $('#row_total').parent().prepend(Fuel_Plan);
+      total_cost+=500
+      $('.total_cost').val("Rs. "+total_cost);
+    } else {
+      $("#row_plan").remove();
+      total_cost-=500;
+      $('.total_cost').val("Rs. "+total_cost);
+    }
+});
+
+
+
+
+/*    Account Details Events   */
+
+          $('#awesome_icon2').hide();
+          $('#acc_label').hide();
+          function submitForm(e){
+          e.preventDefault();
+          var email=$('#inputEmail1').val();
+          if(!email)
+          {
+            email=$('#inputEmail2').val();
+          }
+          $('#acc_label').val(email);
+          name  = email.substring(0, email.lastIndexOf("@"));
+          $('#awesome_icon2').show();
+          $('#acc_label').show();
+          $('#div1_part3_div2').hide();
+          $('#div1_part3_div3').hide(); 
+          $('#head_login_btn').hide();
+            var header_part=$('<li class="dropdown"><span style="top: 15px;"class="glyphicon glyphicon-user">'+
+            '</span><a style="margin-top: -22px;margin-right: 22px"class="dropdown-toggle" data-toggle="dropdown" href="#">'+
+            '&nbsp;&nbsp;'+name+'<span class="glyphicon glyphicon-menu-down"></span></a>'+
+            '<ul class="dropdown-menu"><li><a href="#">Peronal info</a></li><li>'+
+            '<a href="#">edit</a></li><li><a href="#">logout</a></li></ul></li>');
+          $('#head_login_btn').parent().append(header_part);
+          }
